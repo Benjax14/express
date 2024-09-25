@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mysqldb:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${EXPRESS_DATASOURCE_PASS}
+      MYSQL_DATABASE: ${EXPRESS_DATASOURCE_DB}
+    ports:
+      - "3306:3306"

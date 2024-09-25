@@ -9,5 +9,5 @@ function sumTotal(params) {
 }
 
 module.exports = {
-  sumTotal,
+  sumTotal
 };
